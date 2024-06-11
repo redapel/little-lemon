@@ -1,15 +1,19 @@
 import React from "react";
-import LOGO from '../public/Logo.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './HomePage';
+import BookingPage from './BookingPage';
+import ConfirmedPage from './ConfirmedPage';
 
 function Nav() {
     return (
         <nav>
-            <img src={LOGO} alt="Little Lemon Logo"></img>
-            <ul>
-                <li>
-                    <a href='#'></a>
-                </li>
-            </ul>
+            <BrowserRouter>
+                <Routes> 
+                    <Route path="/" element={<HomePage />}>Home</Route>
+                    <Route path="/booking" element={<BookingPage />}>Booking</Route>
+                    <Route path="/confirmed" element={<ConfirmedPage />}>Confirmed</Route>
+                </Routes>
+            </BrowserRouter>
         </nav>
     );
 }

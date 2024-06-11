@@ -1,3 +1,58 @@
+body {
+  background-color: #EDEFEE;
+  font-family: 'Markazi Text', serif !important;
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+header > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+}
+
+footer > div > img {
+  width: 5%;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+section {
+  display: flex;
+}
+
+article {
+  flex: 1;
+}
+
+footer {
+  display: flex;
+}
+
+footer div {
+  flex: 1;
+}
+
 .App {
   text-align: center;
 }
@@ -27,4 +82,71 @@
   display: grid;
   grid-template-columns: repeat(3, 100px);
   grid-template-rows: 2fr 1fr;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#links {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+  transform: translateY(-35px);
+}
+
+#links:hover {
+  background-color: #F4CE14;
+}
+
+nav section:first-child {
+  background-color:#495E57;
+}
+
+nav section:first-child article {
+  display: flex;
+}
+
+nav section:first-child img {
+  width: 300px;
+  height: 300px;
+  margin-top: 0px;
+  margin-bottom: -50px;
+  margin-right: 100px;
+  border-radius: 10px;
+  margin-left: 250px;
+}
+
+nav section:first-child article div {
+  margin-top: 30px;
+  margin-bottom: -50px;
+  width: 300px;
+  height: 300px;
+  margin-left: 300px;
+}
+
+nav section:first-child article div h2 {
+  color: #F4CE14;
+}
+
+nav section:first-child article div h3 {
+  color: white;
+}
+
+nav section:first-child article div p {
+  color: white;
+}
+
+#reserve-a-table-url {
+  padding: 0px;
+}
+
+#little-lemon-logo {
+  margin-left: 300px;
 }
